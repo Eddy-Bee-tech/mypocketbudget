@@ -1,4 +1,4 @@
-MyPocketBudget Prototype 0.8.7 - Ocean Blue Selected Date Fix
+MyPocketBudget Prototype 0.8.8 - Selected Date Highlight Fix
 
 - Restores chart layout, height, axis spacing, and proportions from v0.7.1.
 - Keeps v0.8.0 daily details: select a bar/date to show daily totals and all transactions.
@@ -20,3 +20,6 @@ Back up JSON before replacing deployed files.
 - v0.8.7: fixes selected daily date label to show Ocean Blue background (#183B56) with white text. No chart geometry, colors, data, or other features changed.
 
 - v0.8.7: fixes selected-day highlighting by matching the explicit numeric data-day attribute rather than parsing the accessible label. Chart dimensions, bar colors, data, and other functions are unchanged.
+
+
+- v0.8.8: selected day label is styled directly from the numeric selected day on render and click. Only selected-date label presentation changed; chart geometry, bar sizes/colors, data, daily details, and other functions are unchanged.
