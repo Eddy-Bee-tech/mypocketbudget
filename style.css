@@ -105,3 +105,11 @@ nav button{border:0;background:none;color:var(--muted);font-size:20px;border-rad
   box-shadow:none !important;
 }
 .dailyCol > .dailyDateLabel { padding-left:3px !important; padding-right:3px !important; letter-spacing:0 !important; }
+
+/* v0.8.6: enforce Ocean Blue selected-day label only */
+.dailyCol.selectedDay > .dailyDateLabel {
+  background-color:#183B56 !important;
+  color:#FFFFFF !important;
+  border:1px solid #183B56 !important;
+  font-weight:800 !important;
+}

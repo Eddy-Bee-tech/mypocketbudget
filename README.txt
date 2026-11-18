@@ -1,4 +1,4 @@
-MyPocketBudget Prototype 0.8.5 - Ocean Blue Tooltip Polish
+MyPocketBudget Prototype 0.8.6 - Ocean Blue Selected Date Fix
 
 - Restores chart layout, height, axis spacing, and proportions from v0.7.1.
 - Keeps v0.8.0 daily details: select a bar/date to show daily totals and all transactions.
@@ -16,3 +16,5 @@ Back up JSON before replacing deployed files.
 - v0.8.4: selected date label uses dark Ocean Blue with white text; removed native hover titles that could show a neighboring date; daily totals are recalculated from the selected date's transactions; empty days show zero totals and 'ไม่มีรายการในวันนี้'; improved spacing of the first abbreviated month label.
 
 - v0.8.5: removes native floating browser tooltips from the daily chart; selected date styling, chart dimensions/colors, daily detail panel, data storage, and all existing features are unchanged.
+
+- v0.8.6: fixes selected daily date label to show Ocean Blue background (#183B56) with white text. No chart geometry, colors, data, or other features changed.
