@@ -113,3 +113,12 @@ nav button{border:0;background:none;color:var(--muted);font-size:20px;border-rad
   border:1px solid #183B56 !important;
   font-weight:800 !important;
 }
+
+/* v0.8.7: selected date lookup uses data-day; label-only Ocean Blue state */
+.dailyCol.selectedDay > .dailyDateLabel {
+  background:#183B56 !important;
+  color:#FFFFFF !important;
+  border:1px solid #183B56 !important;
+  border-radius:6px !important;
+  font-weight:800 !important;
+}
