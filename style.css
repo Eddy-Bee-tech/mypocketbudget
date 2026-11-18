@@ -33,9 +33,15 @@ nav button{border:0;background:none;color:var(--navy);font-size:20px}nav small{d
 #toast{position:fixed;bottom:75px;left:50%;transform:translateX(-50%);background:var(--navy);color:white;padding:10px 16px;border-radius:20px;opacity:0}
 #toast.show{opacity:1}
 .periodPick{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:12px 0}.periodPick select{min-width:0;font-size:14px}
-.chartRow{display:grid;grid-template-columns:75px 1fr 95px;gap:8px;align-items:center;margin:12px 0;font-size:12px}
-.chartTrack{height:12px;background:var(--pale);border-radius:10px;overflow:hidden}.chartTrack i{display:block;height:100%;border-radius:10px;background:var(--income)}
-.chartTrack.exp i{background:var(--expense)}
+.chartLegend{display:flex;gap:16px;align-items:center;margin:14px 0 8px;font-size:11px;color:var(--muted)}
+.chartLegend span{display:flex;align-items:center;gap:6px}.chartLegend i{display:inline-block;width:9px;height:9px;border-radius:3px}.legendIncome{background:var(--income)}.legendExpense{background:var(--expense)}
+.verticalChart{display:grid;grid-template-columns:repeat(12,minmax(34px,1fr));gap:5px;align-items:end;min-width:500px;padding:8px 2px 2px;border-bottom:1px solid var(--border)}
+.verticalCol{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;min-width:0}
+.verticalBars{height:155px;width:100%;display:flex;align-items:flex-end;justify-content:center;gap:3px;border-bottom:1px solid var(--border)}
+.verticalBars i{display:block;width: min(34%,13px);min-height:0;border-radius:4px 4px 0 0;transition:height .2s ease}
+.incomeBar{background:var(--income)}.expenseBar{background:var(--expense)}
+.verticalCol small{font-size:10px;color:var(--muted);white-space:nowrap}
+#trend{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .catItem{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding:8px 0;font-size:12px}
 .catItem button{border:0;background:none;color:var(--expense)}
 @media print{header,nav,.tabs,button{display:none!important}main{padding:0}.page{display:none!important}#report{display:block!important}.periodPick{display:block}}
