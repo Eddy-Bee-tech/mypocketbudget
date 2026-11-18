@@ -89,3 +89,19 @@ nav button{border:0;background:none;color:var(--muted);font-size:20px;border-rad
 
 /* v0.8.3: high-contrast selected date label */
 .dailyCol.selectedDay .dailyDateLabel{background:#183B56!important;color:#fff!important;border-radius:6px;font-weight:800}
+
+
+/* v0.8.4 Ocean Blue Chart Fix */
+.dailyCol.selectedDay > .dailyDateLabel,
+.dailyCol.selectedDay > small.dailyDateLabel,
+.dailyCol.selectedDay .dailyDateLabel,
+.dailyCol.selectedDay .dailyDateLabel:focus {
+  background:#183B56 !important;
+  color:#FFFFFF !important;
+  border:1px solid #183B56 !important;
+  border-radius:6px !important;
+  font-weight:800 !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+.dailyCol > .dailyDateLabel { padding-left:3px !important; padding-right:3px !important; letter-spacing:0 !important; }
