@@ -1,2 +1,1 @@
-MyPocketBudget Prototype 0.1.0
-Deploy to GitHub Pages (HTTPS). Local browser storage. JSON backup/restore. Excel-compatible CSV export. PDF via browser Print > Save as PDF. Data does not sync between devices.
+MyPocketBudget Prototype 0.3.0 - Ocean Blue Theme\nVisual update only: Ocean Blue palette applied across the app. Existing features and local data structure are retained. Includes the 0.2.0 feature set: Thai Buddhist Era report selectors, custom categories, annual trend chart, XLSX/CSV export, JSON backup/restore, and print to PDF. Data remains in this browser/device; no cloud sync. Deploy all six files to GitHub Pages main/root and hard refresh Ctrl+F5.\n

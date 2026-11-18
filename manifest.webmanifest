@@ -1,1 +1,8 @@
-{"name": "MyPocketBudget", "short_name": "MyPocket", "start_url": "./", "display": "standalone", "background_color": "#fff9ed", "theme_color": "#654321"}
+{
+  "name": "MyPocketBudget",
+  "short_name": "MyPocket",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F3F8FC",
+  "theme_color": "#183B56"
+}
