@@ -79,3 +79,9 @@ nav button{border:0;background:none;color:var(--muted);font-size:20px;border-rad
 .chartTip .entry{margin:7px 0;padding:9px;background:var(--surface);}
 .dailyCol>small[role="button"]{cursor:pointer;}
 .dailyCol>small[role="button"]:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:3px;}
+
+/* v0.8.2: clearer selected day in the restored daily chart */
+.dailyCol .dailyDateLabel{display:block;white-space:nowrap;border-radius:6px;padding:3px 1px;cursor:pointer;transition:background .15s,color .15s;font-weight:500}
+.dailyCol.selectedDay .dailyDateLabel{background:#D5E7F4;color:#183B56;font-weight:800;outline:1px solid #4EA5D9}
+.dailyCol.selectedDay .dailyBarsArea{background:rgba(78,165,217,.10);border-radius:6px 6px 0 0}
+.dailyCol.selectedDay .incomeBar,.dailyCol.selectedDay .expenseBar{filter:brightness(.92);box-shadow:0 0 0 1px rgba(24,59,86,.18)}
