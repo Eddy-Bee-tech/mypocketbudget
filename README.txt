@@ -1,9 +1,12 @@
-MyPocketBudget Prototype 0.8.0 - Ocean Blue Daily Chart
+MyPocketBudget Prototype 0.8.1 - Ocean Blue
 
-Daily chart improvements:
-- Date labels include day and abbreviated Thai month (e.g. 1 พ.ย.).
-- Clicking/tapping a date label or daily bar opens all transactions for that date, including category, income/expense type, date, note, amount, and edit/delete actions.
-- Dates with no transactions explicitly state that income and expenses are both 0.00 baht.
-- The selected date detail shows daily income, expense, and net totals.
+- Restores chart layout, height, axis spacing, and proportions from v0.7.1.
+- Keeps v0.8.0 daily details: select a bar/date to show daily totals and all transactions.
+- Days without transactions explicitly show income 0.00 and expenses 0.00 baht.
+- Compact month labels appear periodically (e.g. 1 พ.ย.) to keep 28–31 day charts readable.
+- Retains localStorage key mypocket_v1 and all existing features: transactions, edit/delete,
+  categories, budget, calendar, monthly/yearly reports, JSON backup/restore,
+  Excel/CSV export, and print/PDF.
+- Service worker cache updated to v0.8.1.
 
-Retained: localStorage key mypocket_v1, existing transaction data, income/expense entry, edit/delete, categories, budget, calendar, monthly/yearly reports, JSON backup/restore, Excel/CSV export and print/PDF. Service worker cache updated to v0.8.0. Back up JSON before replacing deployed files.
+Back up JSON before replacing deployed files.

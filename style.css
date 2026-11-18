@@ -72,16 +72,10 @@ nav button{border:0;background:none;color:var(--muted);font-size:20px;border-rad
 .summaryRows strong{text-align:right;}
 @media(max-width:520px){.dailyChartShell{gap:5px}.dailyAxis{width:36px;flex-basis:36px;height:182px;padding-bottom:22px;font-size:8px}.dailyPlot{height:182px}.dailyBarsArea{height:160px}.dailyGridLines{bottom:22px}.dailyCol>small{font-size:7px;letter-spacing:-.4px}.dailyAxisCaption{margin-left:41px;font-size:9px}}
 
-/* v0.8.0: compact date labels and selectable daily detail */
-.dailyCol{overflow:visible;}
-.dailyDateLabel{height:30px;min-width:0;width:100%;padding:2px 0;border:0;background:transparent;color:var(--muted);font:inherit;font-size:clamp(5px,1.35vw,8px);line-height:1.05;white-space:nowrap;overflow:visible;cursor:pointer;}
-.dailyDateLabel:focus-visible{outline:2px solid var(--blue);outline-offset:1px;border-radius:3px;}
-.dailyAxis{padding-bottom:30px;}
-.dailyPlot{height:206px;}
-.dailyGridLines{bottom:30px;}
-.dailyBarsArea{height:176px;}
+/* v0.8.1: keep v0.7.1 chart proportions; retain daily detail presentation */
 .chartTip .dayTipTotals{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:8px;}
 .chartTip .dayTipHeading{font-weight:700;margin-top:12px;}
 .chartTip .dayEmpty{margin:8px 0 2px;padding:10px;background:var(--surface);border-radius:8px;}
 .chartTip .entry{margin:7px 0;padding:9px;background:var(--surface);}
-@media(max-width:520px){.dailyAxis{height:190px;padding-bottom:30px}.dailyPlot{height:190px}.dailyBarsArea{height:160px}.dailyGridLines{bottom:30px}.dailyDateLabel{font-size:6px;letter-spacing:-.35px;padding:1px 0;}}
+.dailyCol>small[role="button"]{cursor:pointer;}
+.dailyCol>small[role="button"]:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:3px;}
