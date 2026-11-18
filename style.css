@@ -13,7 +13,7 @@ main{max-width:700px;margin:auto;padding:20px 15px 100px}
 .green,.in .value{color:var(--income)}.red,.out .value{color:var(--expense)}
 .track{height:8px;background:var(--pale);border-radius:9px}.track i{display:block;height:8px;background:var(--income);width:0;border-radius:9px}
 .tabs{display:flex;gap:8px;margin:12px 0}.tabs button{flex:1;border:0;border-radius:10px;padding:12px;background:var(--pale);color:var(--navy)}
-.tabs .sel{background:var(--navy);color:white}
+.tabs .sel{background:#D5E7F4;color:var(--navy);border:1px solid var(--blue);font-weight:800}
 label{display:block;font-weight:650;margin:14px 0 6px;font-size:13px}
 input,select{width:100%;padding:13px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font:inherit}
 .primary,.secondary{width:100%;border:0;border-radius:12px;padding:14px;margin-top:12px;font-weight:700;background:var(--navy);color:white}
@@ -26,22 +26,28 @@ input,select{width:100%;padding:13px;border:1px solid var(--border);border-radiu
 .calhead{display:flex;justify-content:space-between}.calhead button{border:0;padding:8px 15px;border-radius:8px;background:var(--pale);color:var(--navy)}
 .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}
 .grid button{border:1px solid var(--border);background:var(--surface);border-radius:8px;min-height:40px}
-.grid button.today{background:var(--navy);color:white}.grid small{display:block;font-size:8px}
+.grid button.today{background:#D5E7F4;color:var(--navy);border:2px solid var(--blue);font-weight:800}.grid small{display:block;font-size:8px}
 .bar{height:7px;background:var(--pale);margin:5px 0 12px;border-radius:8px}.bar i{display:block;background:var(--expense);height:7px;border-radius:8px}
 nav{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(6,1fr);padding:8px 0}
-nav button{border:0;background:none;color:var(--navy);font-size:20px}nav small{display:block;font-size:10px}
+nav button{border:0;background:none;color:var(--muted);font-size:20px;border-radius:10px;padding:5px 0}nav button.active{background:#D5E7F4;color:var(--navy);font-weight:800}nav button.active small{color:var(--navy);font-weight:800}nav small{display:block;font-size:10px}
 #toast{position:fixed;bottom:75px;left:50%;transform:translateX(-50%);background:var(--navy);color:white;padding:10px 16px;border-radius:20px;opacity:0}
 #toast.show{opacity:1}
 .periodPick{display:grid;grid-template-columns:2fr 1fr;gap:8px;margin:12px 0}.periodPick select{min-width:0;font-size:14px}
 .chartLegend{display:flex;gap:16px;align-items:center;margin:14px 0 8px;font-size:11px;color:var(--muted)}
 .chartLegend span{display:flex;align-items:center;gap:6px}.chartLegend i{display:inline-block;width:9px;height:9px;border-radius:3px}.legendIncome{background:var(--income)}.legendExpense{background:var(--expense)}
-.verticalChart{display:grid;grid-template-columns:repeat(12,minmax(34px,1fr));gap:5px;align-items:end;min-width:500px;padding:8px 2px 2px;border-bottom:1px solid var(--border)}
-.verticalCol{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:7px;min-width:0}
-.verticalBars{height:155px;width:100%;display:flex;align-items:flex-end;justify-content:center;gap:3px;border-bottom:1px solid var(--border)}
-.verticalBars i{display:block;width: min(34%,13px);min-height:0;border-radius:4px 4px 0 0;transition:height .2s ease}
+.verticalChart{position:relative;display:grid;grid-template-columns:repeat(12,minmax(48px,1fr));gap:7px;align-items:end;min-width:650px;padding:20px 4px 2px;border-bottom:1px solid var(--border);background:repeating-linear-gradient(to top,transparent 0,transparent 38px,var(--border) 39px,var(--border) 40px)}
+.verticalCol{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px;min-width:0}
+.verticalBars{height:170px;width:100%;display:flex;align-items:flex-end;justify-content:center;gap:3px;border-bottom:1px solid var(--border)}
+.verticalBarWrap{height:100%;width: min(42%,22px);display:flex;flex-direction:column;justify-content:flex-end;align-items:center;position:relative}
+.verticalBars i{display:block;width:100%;min-height:0;border-radius:4px 4px 0 0;transition:height .2s ease;cursor:pointer}
 .incomeBar{background:var(--income)}.expenseBar{background:var(--expense)}
-.verticalCol small{font-size:10px;color:var(--muted);white-space:nowrap}
-#trend{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.barValue{font-size:9px;line-height:1.1;color:var(--text);white-space:nowrap;margin-bottom:3px;max-width:56px;overflow:hidden;text-overflow:ellipsis}
+.verticalCol small{font-size:11px;color:var(--muted);white-space:nowrap}
+.chartTip{margin-top:10px;padding:10px 12px;background:var(--pale);border:1px solid var(--border);border-radius:10px;font-size:12px;color:var(--text);display:none}
+.chartTip.show{display:block}
+.chartTip strong{color:var(--navy)}
+#trend{overflow-x:auto;-webkit-overflow-scrolling:touch;position:relative}
 .catItem{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding:8px 0;font-size:12px}
 .catItem button{border:0;background:none;color:var(--expense)}
 @media print{header,nav,.tabs,button{display:none!important}main{padding:0}.page{display:none!important}#report{display:block!important}.periodPick{display:block}}
+\n@media(max-width:520px){.verticalChart{min-width:650px}.barValue{font-size:8px;max-width:48px}.verticalCol small{font-size:10px}.chartLegend{font-size:12px}.tabs button{font-size:13px;padding:11px 6px}}\n

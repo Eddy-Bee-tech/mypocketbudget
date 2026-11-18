@@ -1,2 +1,2 @@
-MyPocketBudget Prototype 0.4.0 - Ocean Blue
-This release changes the annual income/expense trend chart to vertical grouped columns. Existing localStorage key and data structure are unchanged. Existing features retained: income/expense entry, history, Buddhist Era calendar, monthly/yearly reports, categories, budget, JSON backup/restore, XLSX/CSV export, and print/PDF. Data remains local to this browser/device; no cloud sync. Before updating, download a JSON backup. Upload all six files to GitHub Pages main/root.
+MyPocketBudget Prototype 0.5.0 - Ocean Blue
+Updates: dark-text active buttons; vertical chart with value labels above bars, horizontal gridlines, tap/click details, and responsive month labels. Existing storage key mypocket_v1 and all previous features/data formats are retained. Backup JSON before deployment.
