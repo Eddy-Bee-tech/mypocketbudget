@@ -1,8 +1,8 @@
-MyPocketBudget Prototype 0.7.0 - Ocean Blue Daily Chart
+MyPocketBudget Prototype 0.7.1 - Ocean Blue Daily Chart
 
 Monthly report improvements:
-- Daily labels remain legible for 28, 29, 30 and 31-day months without horizontal scrolling.
-- Added a vertical amount axis with five scale labels and horizontal grid lines.
+- All days (28, 29, 30 or 31) fit the available chart width without horizontal scrolling.
+- Kept the vertical amount axis with five scale labels and horizontal grid lines; tightened spacing for small screens.
 - Tapping or keyboard-activating either daily bar shows income, expense and net for that date.
 - Daily chart columns are generated from the selected month length.
 
