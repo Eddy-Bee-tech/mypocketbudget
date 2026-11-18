@@ -1,4 +1,4 @@
-MyPocketBudget Prototype 0.8.1 - Ocean Blue
+MyPocketBudget Prototype 0.8.3 - Ocean Blue
 
 - Restores chart layout, height, axis spacing, and proportions from v0.7.1.
 - Keeps v0.8.0 daily details: select a bar/date to show daily totals and all transactions.
@@ -7,6 +7,8 @@ MyPocketBudget Prototype 0.8.1 - Ocean Blue
 - Retains localStorage key mypocket_v1 and all existing features: transactions, edit/delete,
   categories, budget, calendar, monthly/yearly reports, JSON backup/restore,
   Excel/CSV export, and print/PDF.
-- Service worker cache updated to v0.8.1.
+- Service worker cache updated to v0.8.3.
 
 Back up JSON before replacing deployed files.
+
+- v0.8.3: selected date uses dark Ocean Blue background with white text; empty days explicitly show zero income/expense and 'ไม่มีรายการในวันนี้'.
