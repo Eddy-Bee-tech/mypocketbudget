@@ -1,2 +1,2 @@
-MyPocketBudget Prototype 0.5.0 - Ocean Blue
-Updates: dark-text active buttons; vertical chart with value labels above bars, horizontal gridlines, tap/click details, and responsive month labels. Existing storage key mypocket_v1 and all previous features/data formats are retained. Backup JSON before deployment.
+MyPocketBudget Prototype 0.6.0 - Ocean Blue Daily Report
+Updates: Monthly report now displays daily income/expense bars for only the selected month, with daily tap details and a monthly numeric summary (income, expense, net, transaction count). Yearly report continues to show Jan-Dec monthly bars. Existing localStorage key mypocket_v1, stored records, JSON backup/restore, Excel/CSV/PDF features and other functions are retained. Backup JSON before deployment.
